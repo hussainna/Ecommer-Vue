@@ -1,0 +1,33 @@
+@import '../../style/config.scss';
+.type{
+    height: 50vh;
+    .container{
+        padding-top: 30px;
+        @include flex(space-between,center);
+
+        .item{
+            @include flex(space-between,center);
+            background-color: #f1f7ee;
+           height: 250px;
+            margin-left: 20px;
+            padding: 30px;
+          img{
+               width: 50%;
+          }
+          label{
+            color: $green;
+          }
+          h2{
+            margin: 10px 0;
+            font-size: 25px;
+            font-weight: 500;
+            width: 80%;
+          }
+          button{
+            margin-top: 10px;
+
+            @include button(10px 20px,15px)
+          }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$green:#05c26a;
+$blue:#14113a;
+$back:#f1f7ee;
+$footer:#c0c5c9;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;    
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+@mixin flex($space-between,$items){
+    display: flex;
+    justify-content: $space-between;
+    align-items: $items;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@mixin button($padding,$size){
+    padding: $padding;
+    background-color: $green;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size:$size;
+    font-weight: 500;
+}
+@mixin grid($num){
+    display: grid;
+    grid-template-columns: repeat($num,1fr);
+    grid-gap: 30px;
+}

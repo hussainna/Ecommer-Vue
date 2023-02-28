@@ -1,0 +1,65 @@
+@import '../../style/config.scss';
+
+
+.product{
+    .container{
+        padding-top: 30px;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px;
+        .title{
+            margin-bottom: 20px;
+            label{
+                color: $green
+            }
+            h2{
+                margin-top: 10px;
+                font-size: 35px;
+                
+            }
+        }
+        .row{
+            @include grid(4);
+            .item{
+                background-color: #F1F7EE;
+                padding-top: 20px;
+                transition: .4s ease;
+              
+                img{
+                    width: 65%;
+                }
+                .item-bottom{
+                    i{
+                        font-size: 15px;
+                        color: gold;
+                        margin: 10px 0;
+                    }
+                    h4{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 10px 0;
+                    }
+                    .price{
+                        margin-bottom: 10px;
+                    }
+                    .price label{
+                        margin-left: 10px;
+
+                    }
+                    .old-price{
+                        color: gray;
+                    }
+                    .new-price{
+                        color: $green;
+                    }
+                    button{
+                        @include button(10px 20px,15px);
+                        margin-bottom: 20px;
+                    }
+
+                }
+            }
+        }
+  
+    }
+}

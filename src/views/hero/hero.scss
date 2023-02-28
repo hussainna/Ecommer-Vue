@@ -1,0 +1,42 @@
+@import '../../style/config.scss';
+.hero{
+    height: 90vh;
+    background-color: #f1f7ee;
+    .container{
+        padding-top: 5%;
+        @include flex(space-between,center);
+        .left{
+            position: relative;
+        }
+        label{
+            color: green;
+        }
+        .title{
+            font-size: 50px;
+            width: 70%;
+            margin: 15px 0;
+        }
+        span{
+            color: $green;
+        }
+        p{
+            color: gray;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 15px 35px;
+            background-color: $green;
+            color: white;
+            border-radius: 50px;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        img{
+            width: 95%;
+        }
+    }
+}

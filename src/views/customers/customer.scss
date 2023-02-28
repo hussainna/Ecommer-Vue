@@ -1,0 +1,55 @@
+@import '../../style/config.scss';
+.customers{
+    .container{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+        .title{
+            label{
+                color: $green;
+            }
+            h2{
+                font-size: 35px;
+                color: $blue;
+                margin: 20px 0;
+            }
+        }
+        .row{
+            @include flex(space-between,center);
+            .item{
+                background-color: $back;
+                padding: 20px;
+                margin-left: 20px;
+                .head{
+                    @include flex(center,center);
+                    margin-bottom: 20px;
+                    .user-img{
+                        margin: 0 20px;
+                        border-radius: 50%;
+                    }
+
+                }
+                i{
+                    font-size: 13px;
+                    color: gold;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: gray;
+                    font-size: 15px;
+                    width: 80%;
+                    margin-left: 25px;
+                    margin-bottom: 20px;
+                }
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                label{
+                    color: $green;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

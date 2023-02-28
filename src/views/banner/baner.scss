@@ -1,0 +1,36 @@
+@import '../../style/config.scss';
+
+.banner{
+    background-color: $green;
+    height: 30vh;
+    position: relative;
+    .img-cover{
+        width: 300px;
+        height: 300px
+        
+    }
+   
+    .flex{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        .img-item{
+            padding: 15px 20px;
+            background-color: rgb(216, 216, 216);
+            border-radius: 50%;
+            opacity: 0.9;
+            margin-right: 10px;
+            
+        }
+        h4{
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+        }
+        @include flex(space-between,center);
+    }
+    .item{
+        @include flex(space-between,center);
+        margin-left: 30px;
+    }
+}

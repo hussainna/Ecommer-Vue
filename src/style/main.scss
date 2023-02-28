@@ -1,0 +1,144 @@
+@import './config.scss';
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+header{
+    background-color: #fff;
+    padding: 20px 0;
+
+    .flex{
+        @include flex(space-between,center);
+    }
+    ul{
+        @include flex(space-between,center);
+        li{
+            margin-left: 10px;
+        }
+    }
+    span{
+        color: #05c26a;
+    }
+
+    a{
+        color: #000;
+        font-weight: 600;
+    }
+    .icons{
+        i{
+            margin-left: 20px;
+            background-color: #f1f7ee;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 50%;
+        }
+    }
+}
+
+footer{
+    background-color: #1d252b;
+    height: 50vh;
+    .container{
+        padding-top: 50px;
+    }
+    h2{
+        color: white;
+        margin-bottom: 20px;
+    }
+    .row{
+        @include grid(4);
+    }
+    .title{
+        h2{
+            font-size: 30px;
+
+            span{
+                color: $green;;
+            }
+        }
+        p{
+            color: $footer;
+            line-height: 20pt;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        i{
+            color: $footer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: .2s ease;
+            border: 1px solid $footer;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover{
+                color: $green;
+                border: 1px solid $green;
+
+            }
+        }
+    }
+    .company{
+        li{
+            margin-top: 20px;
+            a{
+                color: $footer;
+                font-size: 15px;
+                transition: .2s ease;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+    }
+    .contact{
+        li{
+            margin-top: 20px;
+            a{
+                color: $footer;
+                @include flex(left, center);
+                i{
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .newsletter{
+        p{
+            margin-bottom: 20px;
+            color: $footer;
+        }
+        input{
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            &::placeholder{
+                color: gray;
+            }
+        }
+    }
+}
+.under{
+    height: 10vh;
+    background-color: #222c34;
+    .container{
+        p{
+            color: $footer;
+            font-size: 15px;
+        }
+        span{
+            color: $green;
+        }
+        @include flex(space-between,center);
+        padding-top: 25px;
+        .right{
+            @include flex(space-between,center);
+            p{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
